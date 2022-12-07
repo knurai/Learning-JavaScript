@@ -207,6 +207,46 @@ console.log("My Points: " + 5 + 9); //My Points: 59
 console.log(2 + 2); //4
 console.log('11' + '14'); //1114
 
+//Simple calculation using buttons
+
+let num1 = 8;
+let num2 = 2;
+
+document.getElementById('num1-el').textContent = num1; // alternative to .innerText (.textContent)
+document.getElementById('num2-el').textContent = num2;
+
+//Create a 4-functions, call the function when the users click on the respective buttons
+// Render the result of the calculation in the paragraph with id='sum-el'
+//Result "Sum: 2 or any"
+
+let sumEl;
+sumEl = document.getElementById('sum-el');
+
+function add(){
+    console.log("Add button is clicked")
+    let result = num1 + num2;
+    sumEl.textContent = "Sum: " + result;
+}
+
+function subtract(){
+    console.log("Subtract button is clicked")
+    let result = num1 - num2;
+    sumEl.textContent = "Sum: " + result;
+}
+
+function multiply(){
+    console.log("Multiply button is clicked")
+    let result = num1 * num2;
+    sumEl.textContent = "Sum: " + result;
+}
+
+function divide(){
+    console.log("Divide button is clicked")
+    let result = num1 / num2;
+    sumEl.textContent = "Sum: " + result;
+}
+
+
 
 
 
