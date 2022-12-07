@@ -276,8 +276,12 @@ if(sumBlack < 21){
 }
 console.log("Game Result:", messageGame);
 
+
+
 // Misunderstood
+
 /*
+
 let firstCard = Math.floor(Math.random() * 10) + 2;
 console.log(firstCard);
 let secondCard = Math.floor(Math.random() * 10) + 2;;
@@ -285,6 +289,7 @@ console.log(secondCard);
 
 let sumBlack = firstCard + secondCard;
 console.log("Sum of Random numbers", sumBlack);
+
 */
 
 //if else conditions practice
@@ -345,5 +350,7 @@ if(personAge < 100){
 //true
 //false
 
+
+//
 
 
