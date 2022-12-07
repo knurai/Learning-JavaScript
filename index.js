@@ -246,8 +246,104 @@ function divide(){
     sumEl.textContent = "Sum: " + result;
 }
 
+//BlackJack Game
+
+// Create two variables
+//Set their values to a random number between 2-11;
+// Create a variable, sum and set it to the sum of the two cards
+
+let firstCard = 10;
+let secondCard = 11;
+let hasBlackJack = false;
+let isAlive = true;
+
+let sumBlack = firstCard + secondCard;
+console.log(sumBlack);
+
+let messageGame;
+
+if(sumBlack < 21){
+    messageGame = 'Do you want to draw a card?';
+    
+} else if(sumBlack === 21){
+    messageGame = "Wooho! You've won the game!"
+    hasBlackJack = true;
+
+} else //if(sumBlack > 21)
+{
+    messageGame = "You're out of the game!"
+    isAlive = false;
+}
+console.log("Game Result:", messageGame);
+
+// Misunderstood
+/*
+let firstCard = Math.floor(Math.random() * 10) + 2;
+console.log(firstCard);
+let secondCard = Math.floor(Math.random() * 10) + 2;;
+console.log(secondCard);
+
+let sumBlack = firstCard + secondCard;
+console.log("Sum of Random numbers", sumBlack);
+*/
+
+//if else conditions practice
+/*
+if(sumBlack < 21){
+    console.log('Do you want to draw a card?')
+    
+} else if(sumBlack === 21){
+    console.log("Wooho! You've won the game!")
+    hasBlackJack = true;
+
+} else //if(sumBlack > 21)
+{
+    console.log("You're out of the game!")
+    isAlive = false;
+}
+
+//Cash out Track
+console.log(hasBlackJack);
+
+console.log(isAlive);
+*/
+//Another case
+    //Create a variable called isAlive and assign it to true
+    //Flip its value to false in the appropriate code block
 
 
+//Exercise
+
+//Check if the person is old enough to enter in the club (21)
+//Log a suitable message to the console in both cases
+
+let age = 10;
+
+if(age < 21){
+    console.log("You're too young to enter the Club. Have some time and grow your beard")
+} else{
+    console.log("Welcome to Club!")
+}
+
+//Check if the person is eligible for the birthday card from the King! (100)
+
+let personAge = 100;
+
+if(personAge < 100){
+    console.log("You're not eligible for the Birthday Card")
+} else if(personAge === 100){
+    console.log("Here is your Birthday Card from the King!")
+} else{
+    console.log("Not Eligible, you have already gotten one")
+}
+
+//false
+//true
+//false
+//false
+//true
+//true
+//false
 
 
 
